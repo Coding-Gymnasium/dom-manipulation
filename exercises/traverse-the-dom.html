@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Traverse The DOM</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      * {
+        border: 2px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+      }
+      body {
+        max-width: 600px;
+        font-family: sans-serif;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Welcome</h1>
+      <div class="wrapper">
+        <h2 class="sub-heading">Traversing The DOM</h2>
+        <p>How do we do it</p>
+        <p>Stick around, and I'll show you</p>
+        <div id="wrapper-2"><h2 class="joke">Joke of the day</h2></div>
+        <p>what do you call fish with no eyes? ... fish</p>
+        <button id="btn" onClick="(changeColor())">
+          Change joke title color
+        </button>
+      </div>
+        <ul>
+        <li>Item 1</li>
+        <li style="background: green;">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+    </main>
+    <!--Scripts below ⬇️  -->
+    <script>
+      const changeColor = () => {
+        let btn = document.getElementById("btn");
+        btn.previousElementSibling.style = "color: red";
+      };
+
+      let ul = document.getElementsByTagName('ul')[0];
+      let secondItem = ul.children[1];
+      secondItem.nextElementSibling.style = 'background: pink'
+    </script>
+  </body>
+</html>
