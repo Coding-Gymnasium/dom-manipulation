@@ -11,12 +11,13 @@
 
     <script>
       let newElement = document.createElement("p");
-      newElement.textContent = "Hello";
+      newElement.textContent = "Hello World!";
+
+      let h1Element = document.querySelector("h1");
       let bodyElement = document.querySelector("body");
-      bodyElement.appendChild(newElement);
-      let insertBeforeElement = document.createElement("h3");
-      insertBeforeElement.textContent = "I come first";
-      bodyElement.insertBefore(insertBeforeElement, newElement);
+
+      let h1NextElement = h1Element.nextElementSibling;
+      bodyElement.insertBefore(newElement, h1NextElement);
     </script>
   </body>
 </html>
