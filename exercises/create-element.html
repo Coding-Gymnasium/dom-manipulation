@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Create Element</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Create Element Lessons</h1>
+
+    <script>
+      let newElement = document.createElement("p");
+      newElement.textContent = "Hello";
+      let bodyElement = document.querySelector("body");
+      bodyElement.appendChild(newElement);
+      let insertBeforeElement = document.createElement("h3");
+      insertBeforeElement.textContent = "I come first";
+      bodyElement.insertBefore(insertBeforeElement, newElement);
+    </script>
+  </body>
+</html>
