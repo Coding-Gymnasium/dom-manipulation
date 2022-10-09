@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cool Animals</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      h1 {
+        color: gray;
+        font-size: 3em;
+      }
+
+      #container {
+        width: 200px;
+        padding: 8px 15px;
+        margin: 5px;
+        background-color: pink;
+        border-radius: 10px;
+      }
+
+      p {
+        color: blue;
+        font-size: 16px;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Cool Animals</h1>
+    <div class="animals-div"></div>
+
+    <!-- scripts -->
+    <script>
+      let animals = [
+        "Dog",
+        "Cat",
+        "Warthog",
+        "Eagle",
+        "Elephant",
+        "Giraffe",
+        "Lion",
+      ].reverse();
+
+      let divElement = document.querySelector(".animals-div");
+      let greenDiv = document.createElement("div");
+      let paragraph = document.createElement("p");
+
+      greenDiv.id = "container";
+
+      const newDiv = (animal) => `<div id='container'><p>${animal}</p></div>`;
+
+      for (const animal of animals) {
+        divElement.insertAdjacentHTML("afterend", newDiv(animal));
+      }
+    </script>
+  </body>
+</html>
