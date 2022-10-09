@@ -15,9 +15,18 @@
 
       let h1Element = document.querySelector("h1");
       let bodyElement = document.querySelector("body");
-
       let h1NextElement = h1Element.nextElementSibling;
+
       bodyElement.insertBefore(newElement, h1NextElement);
+
+      // remove node
+      let toBeRemovecElement = document.createElement("p");
+      toBeRemovecElement.textContent = "Yet another new element";
+      bodyElement.appendChild(toBeRemovecElement);
+
+      bodyElement.removeChild(toBeRemovecElement);
+
+
     </script>
   </body>
 </html>
