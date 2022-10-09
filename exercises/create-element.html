@@ -24,9 +24,12 @@
       toBeRemovecElement.textContent = "Yet another new element";
       bodyElement.appendChild(toBeRemovecElement);
 
-      bodyElement.removeChild(toBeRemovecElement);
+      // -- using removeChild
+      // bodyElement.removeChild(toBeRemovecElement);
 
+      //--- using remove()
 
+      toBeRemovecElement.remove();
     </script>
   </body>
 </html>
