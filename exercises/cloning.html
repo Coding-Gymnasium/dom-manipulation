@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cloning</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Cloning</h1>
+    <p class="message">Learning about cloning elements</p>
+
+    <!--scripts-->
+    <script>
+      let bodyElement = document.querySelector("body");
+      let paraElement = document.querySelector(".message");
+
+      function append() {
+        let counter = 0;
+        const id = setInterval(sayWhat, 1000);
+
+        function sayWhat() {
+          if (counter === 10) {
+            clearInterval(id);
+          } else {
+            counter++;
+            let clonedText = paraElement.cloneNode(true);
+            bodyElement.appendChild(clonedText);
+            console.log(counter);
+          }
+        }
+      }
+
+      append();
+    </script>
+  </body>
+</html>
