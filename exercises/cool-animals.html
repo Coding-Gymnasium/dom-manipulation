@@ -29,7 +29,8 @@
 
   <body>
     <h1>Cool Animals</h1>
-    <div class="animals-div"></div>
+    <!-- <div class="animals-div"></div> -->
+    <ul></ul>
 
     <!-- scripts -->
     <script>
@@ -41,18 +42,27 @@
         "Elephant",
         "Giraffe",
         "Lion",
-      ].reverse();
+      ];
 
-      let divElement = document.querySelector(".animals-div");
-      let greenDiv = document.createElement("div");
-      let paragraph = document.createElement("p");
+//      let divElement = document.querySelector(".animals-div");
+//      let greenDiv = document.createElement("div");
+//      let paragraph = document.createElement("p");
+//
+//      greenDiv.id = "container";
+//
+//      const newDiv = (animal) => `<div id='container'><p>${animal}</p></div>`;
+//
+//      for (const animal of animals.reverse()) {
+//        divElement.insertAdjacentHTML("afterend", newDiv(animal));
+//      }
 
-      greenDiv.id = "container";
+//--- Clyde's solution
+      let ulElement = document.querySelector('ul');
 
-      const newDiv = (animal) => `<div id='container'><p>${animal}</p></div>`;
-
-      for (const animal of animals) {
-        divElement.insertAdjacentHTML("afterend", newDiv(animal));
+      for(const animal of animals) {
+        let listItem = document.createElement('li');
+        listItem.textContent = animal;
+        ulElement.appendChild(listItem);
       }
     </script>
   </body>
