@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>inline event listener</title>
+  </head>
+  <body>
+    <button onclick="boom()">Click Me</button>
+    <script>
+      let name;
+      let lastname;
+      let origin;
+      let btn = document.querySelector("body");
+      let greeting = document.createElement("p");
+
+      function boom() {
+        name = prompt("What's your name?");
+        console.log(`Nice to meet you ${name}`);
+        switch (true) {
+          case name != null:
+            lastname = prompt("What's your lastname?");
+            console.log(`Nice to meet you ${name} ${lastname}`);
+          case lastname != null:
+            origin = prompt("Where are you from?");
+            console.log(name, lastname, origin);
+            break;
+        }
+        let textNode = document.createTextNode(
+          `Nice to meet you ${name} ${lastname} from ${origin}!`
+        );
+        btn.after(greeting);
+        greeting.appendChild(textNode);
+      }
+    </script>
+  </body>
+</html>
