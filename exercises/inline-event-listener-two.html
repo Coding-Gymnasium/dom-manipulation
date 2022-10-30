@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Event Listener</title>
+  </head>
+  <body>
+    <h1>Practice Inline Event Listeners</h1>
+    <button>Click Me</button>
+
+    <script>
+      // grab button
+      let btn = document.querySelector("button");
+      // add the event and code to execute
+      btn.onmouseover = () => { // onclick, dblclick, onload, onfocus, onmouseout, etc
+        console.log("Clicked")
+      }
+    </script>
+  </body>
+</html>
