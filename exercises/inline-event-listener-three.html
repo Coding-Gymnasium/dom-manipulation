@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1>Lesson 3</h1>
+    <button>Click Me</button>
+    <h1 id="boom"></h1>
+    <script>
+      let btn = document.querySelector('button');
+      let explosion = document.getElementById('boom')
+      btn.addEventListener('click', boom);
+      function boom() {
+        explosion.textContent = 'BOOM 💥'
+      }
+    </script>
+  </body>
+</html>
