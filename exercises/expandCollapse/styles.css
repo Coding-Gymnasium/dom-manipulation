@@ -17,6 +17,11 @@ body {
   transition: max-height 0.7s;
 }
 
+#content.open {
+  max-height: fit-content;
+  transition: max-height 2s;
+}
+
 #content h2 {
   text-align: center;
 }
