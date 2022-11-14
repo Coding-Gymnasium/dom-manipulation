@@ -1,15 +1,11 @@
 let btnBlue = document.getElementById("blue");
 let btnRed = document.getElementById("red");
-let container = document.getElementsByTagName("container");
+let container = document.getElementById("container");
 
 btnBlue.addEventListener("click", () => {
-  Array.from(container).forEach((element) => {
-    element.style = "color: blue;";
-  });
+  container.classList.add("blueText");
 });
 
 btnRed.addEventListener("click", () => {
-  for (const element of container) {
-    element.style = "color: red;";
-  }
+  container.classList.add("redText");
 });
