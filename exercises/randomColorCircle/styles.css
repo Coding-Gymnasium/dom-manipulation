@@ -1,0 +1,31 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: #152238;
+  color: lightgray;
+  background-image: linear-gradient(to right, black, #152238);
+}
+
+main {
+  width: 80%;
+  height: fit-content;
+  text-align: center;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.circle {
+  background-color: darkred;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+  cursor: pointer;
+}
