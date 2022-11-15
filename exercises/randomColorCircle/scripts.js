@@ -1,7 +1,8 @@
 let circle = document.querySelector(".circle");
 
 circle.addEventListener("click", () => {
-  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+  randomColor = randomColor.padStart(6, "0");
 
   circle.style.backgroundColor = `#${randomColor}`;
 });
