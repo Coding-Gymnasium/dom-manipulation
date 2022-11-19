@@ -4,7 +4,7 @@
     <title>Simple Form</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="style.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
     <label for="name">
@@ -20,14 +20,15 @@
 
     <label>
       What's your favorite animal?
-      <select>
-        <option value="dog">Dog</option>
-        <option value="cat">Cat</option>
-        <option value="orca">Orca</option>
+      <select id="animal">
+        <option value="dog 🐶">Dog</option>
+        <option value="cat 🐈">Cat</option>
+        <option value="dolphin 🐬">Dolphin</option>
       </select>
     </label>
     <br />
     <button id="button">Submit</button>
+    <div id="message"></div>
 
     <script src="./scripts.js"></script>
   </body>
