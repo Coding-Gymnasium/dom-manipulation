@@ -1,5 +1,5 @@
 .cool-form {
-  width: 70%;
+  width: 50%;
   background-color: rgb(67, 91, 117);
   padding: 2em 1em;
   border: 5px solid #53687e;
@@ -49,4 +49,11 @@
 
 .cool-form input[type="submit"]:hover {
   background: #294d61;
+}
+
+#output {
+  padding-top: 1em;
+  border-top: 1px solid rgba(81, 174, 228, 0.445);
+  width: 50%;
+  font-size: 1em;
 }
