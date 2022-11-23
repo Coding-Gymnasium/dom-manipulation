@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  background-color: rgb(240, 248, 255);
+}
+
+.drawingBlock {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+
+.container {
+  display: flex;
+  flex-flow: wrap;
+  padding: 1rem;
+  border: solid 1px red;
+  max-width: 500px;
+  height: fit-content;
+}
