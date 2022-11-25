@@ -1,0 +1,15 @@
+#person {
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+#mustache {
+  position: absolute;
+  top: 335px;
+  left: 60px;
+}
+
+#btn {
+  margin-top: 2em;
+}
