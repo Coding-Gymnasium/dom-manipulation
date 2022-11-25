@@ -1,9 +1,10 @@
 let btn = document.getElementById("btn");
 let person = document.getElementById("person");
-let mustache = document.createElement("img");
-mustache.id = "mustache";
-mustache.src = "./mustache.png";
+let mustache = document.getElementById("mustache");
 
 btn.addEventListener("click", () => {
-  person.after(mustache);
+  mustache.classList.toggle("hide");
+  mustache.classList != "hide"
+    ? (btn.textContent = "Remove Mustache ✂️")
+    : (btn.textContent = "Add Mustache 🥸");
 });
