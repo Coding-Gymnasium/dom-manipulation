@@ -5,9 +5,15 @@
 }
 
 #mustache {
-  position: absolute;
   top: 335px;
   left: 60px;
+  cursor: grab;
+  position: absolute;
+}
+
+#mustache:active {
+  cursor: move;
+  cursor: grabbing;
 }
 
 .hide {
