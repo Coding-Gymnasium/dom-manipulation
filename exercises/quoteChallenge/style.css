@@ -1,0 +1,41 @@
+body {
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+}
+.container {
+  margin: auto;
+  padding: 0.5em;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid gray;
+  display: flex;
+  gap: 0.5em;
+  flex-direction: column;
+}
+
+.box {
+  background-color: rgb(242, 212, 215);
+  border-top: 5px solid rgb(0, 105, 148);
+  padding: 1em;
+  width: 900px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.box h1 {
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+#close {
+  color: rgb(139, 0, 0);
+  font-weight: 500;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+}
+
+.remove {
+  display: none;
+}
