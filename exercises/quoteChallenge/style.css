@@ -29,7 +29,7 @@ body {
   font-size: 2rem;
 }
 
-#close {
+.close {
   color: rgb(139, 0, 0);
   font-weight: 500;
   margin-top: 10px;
