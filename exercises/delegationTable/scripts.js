@@ -1,18 +1,20 @@
 let container = document.querySelector(".container");
-console.log(container.childNodes);
+let selectedElement = null;
 
 container.addEventListener("click", changeColor);
 
 function changeColor(e) {
-  let box = document.querySelector(`.${e.path[0].classList[2]}`);
+  let target = e.target;
+  highlight(target);
+}
 
-  box.classList.add('boxClicked')
+function highlight(node) {
+  if (node.classList[0] === "container") return;
 
-  for (let i = 0; i < container.childNodes.length; i++) {
-    if ( container.childNodes[i].classList === undefined ) continue;
-    
-    let list = container.childNodes[i].classList;
-    console.log(list[2], box.classList[2])
+  if (selectedElement != null) {
+    selectedElement.classList.remove("boxClicked");
   }
 
+  selectedElement = node;
+  selectedElement.classList.add("boxClicked");
 }
