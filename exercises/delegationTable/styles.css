@@ -18,8 +18,7 @@ body {
   gap: 5px;
 }
 
-#box {
-  background-color: lightcyan;
+.box {
   width: 250px;
   height: 250px;
   border: 1px solid gray;
@@ -29,6 +28,10 @@ body {
   font-size: 3em;
 }
 
-#boxClicked {
+.boxColor {
+  background-color: lightcyan;
+}
+
+.boxClicked {
   background-color: red;
 }
