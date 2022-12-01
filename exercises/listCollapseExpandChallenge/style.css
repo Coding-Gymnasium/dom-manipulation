@@ -3,3 +3,7 @@ body {
   top: 0;
   left: 0;
 }
+
+.display {
+  display: none;
+}
