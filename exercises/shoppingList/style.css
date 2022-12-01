@@ -1,17 +1,23 @@
 /* -- Reset Global Styles --- */
 
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -25,7 +31,6 @@ input, button, textarea, select {
 }
 
 .heading {
-  border: 1px solid green;
   background-color: yellowgreen;
   padding: 1em;
   height: fit-content;
@@ -36,19 +41,56 @@ input, button, textarea, select {
 }
 
 .heading h1 {
-font-size: 5em;
+  font-size: 8rem;
 }
 
 #item-search {
   border: none;
-  width: 300px;
+  width: 400px;
   margin: auto;
-  line-height: 1.5em;
+  line-height: 2rem;
   padding: 0.5em;
+  font-size: 1.5rem;
 }
 
 #hide {
   display: inline;
+}
+
+.search-bar-container {
+  height: 200px;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  margin: auto;
+  width: fit-content;
+  display: flex;
+  text-align: center;
+  line-height: 2em;
+}
+
+.search-bar input {
+  font-size: 1.5rem;
+  width: 500px;
+}
+
+.search-bar button {
+  width: 150px;
+  border: 1px solid rgb(7, 169, 105);
+  background-color: rgb(7, 169, 105);
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.search-bar input,
+button {
+  border: 1px solid lightgray;
+  padding: 0.5em;
 }
 
 .list-container {
