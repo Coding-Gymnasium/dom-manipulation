@@ -4,15 +4,14 @@ foodList.addEventListener("click", collapseBelowList);
 
 function collapseBelowList(e) {
   let target = e.target;
-  console.log(target.children);
   for (const item of target.children) {
     switch (true) {
-      case item.tagName === "UL":
+      case item.tagName === "UL" && item.style.display === "block":
         item.style.display = "none";
         break;
-
       default:
-        continue;
+        item.style.display = "block";
+        break;
     }
   }
 }
