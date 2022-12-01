@@ -1,0 +1,56 @@
+/* -- Reset Global Styles --- */
+
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* -- Styles --- */
+
+.main {
+  border: 1px solid red;
+  margin: auto;
+  width: 60%;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.heading {
+  border: 1px solid green;
+  background-color: yellowgreen;
+  padding: 1em;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.heading h1 {
+font-size: 5em;
+}
+
+#item-search {
+  border: none;
+  width: 300px;
+  margin: auto;
+  line-height: 1.5em;
+  padding: 0.5em;
+}
+
+#hide {
+  display: inline;
+}
+
+.list-container {
+  border: 1px solid blue;
+}
