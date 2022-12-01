@@ -13,3 +13,5 @@ From Clyde's DOM manipulation course.
     - User hides list by clicking a checkbox at the top of the list labeled 'hide list'
 1. User can search items in shopping list. Only search items display
     - User searches items using an input field without submit button or farther action. Case insensitive.
+
+![Assignment Screenshot](./screenshot1.png)
