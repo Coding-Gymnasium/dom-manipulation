@@ -21,17 +21,34 @@ select {
   font: inherit;
 }
 
+/* -- Color Variables -- */
+:root {
+  --light-gray: rgb(201, 201, 201);
+  --dim-gray: rgb(105, 105, 105);
+  --pale-green: rgb(152, 251, 152);
+  --medium-sea-green: rgb(60, 179, 113);
+  --tomato: rgb(255, 99, 71);
+}
 /* -- Styles --- */
 
+::placeholder {
+  color: var(--light-gray);
+}
+
+h2,
+p {
+  color: var(--dim-gray);
+}
+
 .main {
-  border: 1px solid red;
+  border: 1px solid var(--light-gray);
   margin: auto;
-  width: 60%;
-  box-shadow: 5px 5px 5px gray;
+  width: 80%;
+  box-shadow: 5px 5px 5px var(--light-gray);
 }
 
 .heading {
-  background-color: yellowgreen;
+  background-color: var(--pale-green);
   padding: 1em;
   height: fit-content;
   display: flex;
@@ -57,42 +74,78 @@ select {
   display: inline;
 }
 
-.search-bar-container {
-  height: 200px;
-  padding: 1em;
+.add-bar-container {
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-bar {
+.add-bar {
   margin: auto;
   width: fit-content;
   display: flex;
   text-align: center;
-  line-height: 2em;
+  font-size: 1.5rem;
 }
 
-.search-bar input {
-  font-size: 1.5rem;
+.add-bar input {
+  border: 1px solid var(--light-gray);
   width: 500px;
+  padding: 0.5em;
 }
 
-.search-bar button {
+.add-bar button {
   width: 150px;
-  border: 1px solid rgb(7, 169, 105);
-  background-color: rgb(7, 169, 105);
+  border: 1px solid var(--medium-sea-green);
+  background-color: var(--medium-sea-green);
   color: white;
-  font-size: 1.5rem;
   cursor: pointer;
 }
 
 .search-bar input,
 button {
-  border: 1px solid lightgray;
+  border: 1px solid var(--light-gray);
   padding: 0.5em;
 }
 
 .list-container {
-  border: 1px solid blue;
+  margin: 2em;
+}
+
+.list-container h2 {
+  margin-bottom: 1em;
+}
+
+.list {
+  margin: auto;
+  padding: 0 1em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#list-item {
+  border-left: 5px solid var(--light-gray);
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#list-item:hover {
+  border-left: 5px solid var(--medium-sea-green);
+}
+
+#list-item p {
+  font-size: 1.5rem;
+  width: 90%;
+}
+
+#list-item button {
+  color: white;
+  background-color: var(--tomato);
+  border-radius: 5px;
+  cursor: pointer;
 }
