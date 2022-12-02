@@ -2,6 +2,7 @@
 const addItemForm = document.querySelector(".add-bar");
 const list = document.querySelector(".list");
 
+// ---- Add Item To List
 addItemForm.addEventListener("submit", handleAddItem);
 
 function handleAddItem(e) {
@@ -32,4 +33,14 @@ function parseInput(data) {
   let withoutFirst = data.slice(1).toLowerCase();
   let firstChar = data.slice(0, 1).toUpperCase();
   return firstChar + withoutFirst;
+}
+
+// ---- Remove Item
+
+list.addEventListener("click", removeItem);
+
+function removeItem(e) {
+  if (e.target.tagName === "BUTTON") {
+    e.target.parentElement.remove();
+  }
 }
