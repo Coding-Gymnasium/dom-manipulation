@@ -7,6 +7,7 @@ From Clyde's DOM manipulation course.
 1. User can add items to the shopping list
     - User add items using an input field
     - Once added an item it's added to the list and it has a 'delete' button to the right
+    - When user hovers over item left border changes color
 1. User can delete items from the shopping list
     - User removes item from list by clicking 'delete' button
 1. User can hide list
