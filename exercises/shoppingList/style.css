@@ -150,3 +150,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.hideDiv {
+  display: none;
+}

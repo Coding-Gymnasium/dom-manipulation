@@ -1,6 +1,7 @@
 // add an item to the list
 const addItemForm = document.querySelector(".add-bar");
 const list = document.querySelector(".list");
+const heading = document.querySelector(".heading");
 
 // ---- Add Item To List
 addItemForm.addEventListener("submit", handleAddItem);
@@ -43,4 +44,14 @@ function removeItem(e) {
   if (e.target.tagName === "BUTTON") {
     e.target.parentElement.remove();
   }
+}
+
+// ---- Hide List
+
+heading.addEventListener("click", hideList);
+
+function hideList(e) {
+  e.target.checked
+    ? list.classList.add("hideDiv")
+    : list.classList.remove("hideDiv");
 }
