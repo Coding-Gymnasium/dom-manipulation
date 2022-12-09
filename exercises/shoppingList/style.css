@@ -62,7 +62,7 @@ p {
   font-size: 8rem;
 }
 
-#item-search {
+.item-search {
   border: none;
   width: 400px;
   margin: auto;

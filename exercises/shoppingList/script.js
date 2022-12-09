@@ -1,7 +1,9 @@
 // add an item to the list
 const addItemForm = document.querySelector(".add-bar");
 const list = document.querySelector(".list");
+const wholeList = document.querySelectorAll("#list-item");
 const heading = document.querySelector(".heading");
+const searchBar = document.querySelector(".item-search");
 
 // ---- Add Item To List
 addItemForm.addEventListener("submit", handleAddItem);
@@ -11,7 +13,6 @@ function handleAddItem(e) {
 
   // get data
   const formData = new FormData(addItemForm);
-  console.log(formData.get("add-bar"));
 
   // Add item to list
   let inputFieldValue = formData.get("add-bar");
@@ -54,4 +55,23 @@ function hideList(e) {
   e.target.checked
     ? list.classList.add("hideDiv")
     : list.classList.remove("hideDiv");
+}
+
+// ---- Search Items
+
+searchBar.addEventListener("keyup", displayMatch);
+
+function displayMatch(e) {
+  e.preventDefault();
+
+  for (const item of wholeList) {
+    let parsed = item.textContent.toLowerCase();
+    let inputParsed = e.target.value.toLowerCase();
+
+    if (parsed.includes(inputParsed)) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  }
 }
