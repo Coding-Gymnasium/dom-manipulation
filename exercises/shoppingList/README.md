@@ -16,3 +16,9 @@ From Clyde's DOM manipulation course.
     - User searches items using an input field without submit button or farther action. Case insensitive.
 
 ![Assignment Screenshot](./screenshot1.png)
+
+
+## Bonus Stories
+
+1. Clear input text when user clicks a button
+1. Add tabs
